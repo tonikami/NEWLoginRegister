@@ -1,7 +1,7 @@
 <?php
     require("password.php");
 
-    $con = mysqli_connect("my_host", "my_user", "my_password", "my_database");
+    $connect = mysqli_connect("my_host", "my_user", "my_password", "my_database");
     
     $name = $_POST["name"];
     $age = $_POST["age"];
@@ -19,7 +19,7 @@
 
     function usernameAvailable() {
         global $connect, $username;
-        $statement = mysqli_prepare($connect, "SELECT * FROM users WHERE username = ?"); 
+        $statement = mysqli_prepare($connect, "SELECT * FROM user WHERE username = ?"); 
         mysqli_stmt_bind_param($statement, "s", $username);
         mysqli_stmt_execute($statement);
         mysqli_stmt_store_result($statement);
