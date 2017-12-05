@@ -1,7 +1,7 @@
 <?php
     require("password.php");
 
-    $con = mysqli_connect("my_host", "my_user", "my_password", "my_database");
+    $con = mysqli_connect("localhost", "id3864140_85348", "85348", "id3864140_in2tionmembers");
     
     $username = $_POST["username"];
     $password = $_POST["password"];
