@@ -1,11 +1,11 @@
 <?php
-    require("password.php");
+    require("85348.php");
 
-    $connect = mysqli_connect("my_host", "my_user", "my_password", "my_database");
+    $connect = mysqli_connect("localhost", "id3864140_85348", "85348", "id3864140_in2tionmembers");
     
     $name = $_POST["name"];
     $age = $_POST["age"];
-    $username = $_POST["username"];
+    $username = $_POST["username"]
     $password = $_POST["password"];
 
      function registerUser() {
